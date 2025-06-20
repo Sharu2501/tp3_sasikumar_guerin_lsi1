@@ -1,5 +1,6 @@
 <script setup>
 import BaseButton from '@/components/BaseButton.vue'
+import AsyncButton from '@/components/AsyncButton.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import BaseButton from '@/components/BaseButton.vue'
       <BaseButton>Bouton par défaut</BaseButton>
     </div>
     <p>Here comes the content of the HomePage.</p>
+    <AsyncButton />
   </main>
 </template>
 
