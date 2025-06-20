@@ -6,14 +6,32 @@
     </div>
     <div class="right">
       <font-awesome-icon icon="user" />
-      <span>Not yet logged-in</span>
+      <template v-if="user">
+        <span>{{ user.name }}</span>
+      </template>
+      <template v-else>
+        <SigninButton @login-success="handleLoginSuccess" />
+      </template>
     </div>
   </header>
 </template>
 
 <script>
+import SigninButton from "@/components/SigninButton.vue";
+
 export default {
-  name: 'BaseHeader'
+  name: 'BaseHeader',
+  components: { SigninButton },
+  data() {
+    return {
+      user: null
+    }
+  },
+  methods: {
+    handleLoginSuccess(user) {
+      this.user = user
+    }
+  }
 }
 </script>
 

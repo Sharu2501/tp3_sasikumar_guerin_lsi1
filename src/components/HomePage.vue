@@ -1,15 +1,17 @@
 <script setup>
-import BaseButton from '@/components/BaseButton.vue'
-import AsyncButton from '@/components/AsyncButton.vue'
+// import BaseButton from '@/components/BaseButton.vue'
+// import AsyncButton from '@/components/AsyncButton.vue'
+import SigninButton from '@/components/SigninButton.vue'
 </script>
 
 <template>
   <main class="home-page">
     <div class="button-group">
-      <BaseButton>Bouton par défaut</BaseButton>
+<!--      <BaseButton>Bouton par défaut</BaseButton>-->
+<!--    </div>-->
+<!--    <p>Here comes the content of the HomePage.</p>-->
+<!--    <AsyncButton />-->
     </div>
-    <p>Here comes the content of the HomePage.</p>
-    <AsyncButton />
   </main>
 </template>
 
