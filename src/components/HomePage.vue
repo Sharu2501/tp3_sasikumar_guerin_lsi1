@@ -1,7 +1,7 @@
 <script setup>
 // import BaseButton from '@/components/BaseButton.vue'
 // import AsyncButton from '@/components/AsyncButton.vue'
-import SigninButton from '@/components/SigninButton.vue'
+//import SigninButton from '@/components/SigninButton.vue'
 </script>
 
 <template>
