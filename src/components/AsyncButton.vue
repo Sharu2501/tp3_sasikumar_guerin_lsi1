@@ -2,14 +2,18 @@
 import { ref } from 'vue'
 
 const isPending = ref(false)
+const clickCount = ref(0)
 
 const handleClick = () => {
   if (isPending.value) return
 
   isPending.value = true
+  const delay = 1000 + (clickCount.value * 1000)
+  clickCount.value++
+
   setTimeout(() => {
     isPending.value = false
-  }, 2000) // 2 secondes de désactivation
+  }, delay)
 }
 </script>
 
